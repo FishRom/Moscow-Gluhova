@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Title }}</title>
+    <style>
+    .gray1 span {
+	    padding: 15px 145px 0 0;
+	    background: #FFD599;
+	    color: #755E3E;
+	    }
+	.green2 span {
+	    padding: 15px 93px 0 0;
+	    background: #D5E7DB;
+	    color: #487240;
+	    }
+	.lightgray3 span {
+	    padding: 15px 294px 0 0;
+	    background: #CEF5FD;
+	    color: #2A3E41;
+	    }
+	body {
+  font-family:Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1><font>Результаты отбора</font></h1>
+<h3>Претенденты на участие {{ name }}</h3>
+
+<h4 class="gray1">
+    {% block content %}{% endblock %}
+</h4>
+
+<h4 class="green2">
+    {% block content %}{% endblock %}
+</h4>
+
+<h4 class="lightgray3">
+    <span>Желаем удачи в будещем!</span>
+</h4>
+
+</body>
+</html>
